@@ -1,0 +1,11 @@
+Model Information:
+* title:	SKT 4 electric heating element (class II)
+* source:	https://sketchfab.com/3d-models/skt-4-electric-heating-element-class-ii-a8d5dc8ea0ed40b08ac5775f359fa67c
+* author:	termagroup (https://sketchfab.com/termagroup)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "SKT 4 electric heating element (class II)" (https://sketchfab.com/3d-models/skt-4-electric-heating-element-class-ii-a8d5dc8ea0ed40b08ac5775f359fa67c) by termagroup (https://sketchfab.com/termagroup) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

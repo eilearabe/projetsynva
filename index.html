@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Laboratoire</title>
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+<a-assets>
+<a-plane position="0 0 0" rotation="0 0 0" width="1000" height="1000" color="red"></a-plane>
+<a-sky color="red"></a-sky>
+<video id="video" src="video/video.mp4" autoplay="true"></video>
+<a-asset-item id="laboratoire"       src="t/scene.gltf"></a-asset-item>
+<a-asset-item id="tube"              src="p/model.gltf"></a-asset-item>
+<a-asset-item id="microscope"        src="m/scene.gltf"></a-asset-item>
+<a-asset-item id="centrifuge"        src="o/scene.gltf"></a-asset-item>
+<a-asset-item id="benz"              src="benz/scene.gltf"></a-asset-item>
+<a-asset-item id="bota"              src="bot/scene.gltf"></a-asset-item>
+<a-asset-item id="dozaj"             src="dozaj/scene.gltf"></a-asset-item>
+<a-asset-item id="botl"              src="botl/scene.gltf"></a-asset-item>
+<a-asset-item id="maga"              src="maga/scene.gltf"></a-asset-item>
+<a-asset-item id="pipit"             src="pipit/scene.gltf"></a-asset-item>
+<a-asset-item id="mail"              src="mail/scene.gltf"></a-asset-item>
+<a-asset-item id="balance"           src="balance/scene.gltf"></a-asset-item>
+<a-asset-item id="oscillograph"      src="oscillograph/scene.gltf"></a-asset-item>
+<a-asset-item id="sircuit"           src="sircuit/scene.gltf"></a-asset-item>
+<a-asset-item id="bola"              src="bola/scene.gltf"></a-asset-item>
+<a-asset-item id="ampire"            src="ampire/scene.gltf"></a-asset-item>
+<a-asset-item id="H2O"               src="H2O/scene.gltf"></a-asset-item>
+<a-asset-item id="atome4"            src="atome4/scene.gltf"></a-asset-item>
+<a-asset-item id="tv"                src="tv/scene.gltf"></a-asset-item>
+<a-asset-item id="boitee1"      src="b/scene.gltf"></a-asset-item>
+<a-asset-item id="boitee2"      src="b/scene.gltf"></a-asset-item>
+<a-asset-item id="boitee3"      src="b/scene.gltf"></a-asset-item>
+<a-asset-item id="boitee4"      src="b/scene.gltf"></a-asset-item>
+<a-asset-item id="boitee5"      src="b/scene.gltf"></a-asset-item>
+</a-assets>
+<!--video1-->
+<a-entity geometry="primitive: box" material="src: #video" position="0 12.497 -25.478" scale="2.24 0.96 0.000000001" repeat="indifinite"> 
+</a-entity>
+<!--babTV-->
+<a-box widt="2.3" height="0.98" depth="0.02" position ="0 12.497 -25.46" rotation= "0 0 0" scale="2.24 0.98 0.000000001"  color="black" >
+<a-animation  attribute="position" begin="click" to="0 12.49 -25.5"></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-box>
+<!--video2-->
+<a-entity geometry="primitive: box" material="src: #video" position="0 12.496 -30.959" scale="2.24 0.94 0.000000001" repeat="indifinite"> 
+</a-entity>
+<!--babTV-->
+<a-box widt="2.26" height="0.98" depth="0.02" position ="0 12.496 -30.95" rotation= "0 0 0" scale="2.24 0.98 0.000000001"  color="black" >
+<a-animation  attribute="position" begin="click" to="0 12.49 -30.99"></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-box>
+<a-entity gltf-model="#laboratoire"  scale="0.05 0.065 0.05"          position="-19 10 -15"            rotation="0 0 0"  ></a-entity>
+<a-entity gltf-model="#tube"         scale="0.5 0.5 0.5"              position="12.88 11.2 -27.4"      rotation="0 180 0"></a-entity>
+<a-entity gltf-model="#microscope"   scale="0.05 0.05 0.05"           position="18 11.8 -22.4"         rotation="0 -90 0"></a-entity>
+<a-entity gltf-model="#microscope"   scale="0.05 0.05 0.05"           position="18 11.8 -24.35"        rotation="0 -90 0"></a-entity>
+<a-entity gltf-model="#microscope"   scale="0.05 0.05 0.05"           position="18 11.8 -26.25"        rotation="0 -90 0"></a-entity>
+<a-entity gltf-model="#centrifuge"   scale="3 4 3"                    position="14 11.8 -22.5"         rotation="0 180 0"></a-entity>
+<a-entity gltf-model="#centrifuge"   scale="3 4 3"                    position="15.5 11.8 -22.5"         rotation="0 180 0"></a-entity>
+<a-entity gltf-model="#centrifuge"   scale="3 4 3"                    position="12.6 11.8 -22.5"         rotation="0 180 0"></a-entity>
+<a-entity gltf-model="#boitee1"      scale="0.012 0.006 0.012"        position="13.5 11.8 -27.5"            rotation="0 0 0"  ></a-entity>
+<a-entity gltf-model="#boitee2"      scale="0.012 0.006 0.012"        position="13.5 11.8 -29"              rotation="0 0 0"  ></a-entity>
+<a-entity gltf-model="#boitee3"      scale="0.012 0.006 0.012"        position="10.8 11.8 -27.5"            rotation="0 0 0"  ></a-entity>
+<a-entity gltf-model="#boitee4"      scale="0.012 0.006 0.012"        position="10.8 11.8 -29"              rotation="0 0 0"  ></a-entity>
+<a-entity gltf-model="#boitee5"      scale="0.012 0.006 0.018"        position="18 11.8 -27"              rotation="0 0 0"  ></a-entity>
+<a-entity gltf-model="#boitee5"      scale="0.012 0.006 0.018"        position="18 11.8 -25"              rotation="0 0 0"  ></a-entity>
+<a-entity gltf-model="#boitee5"      scale="0.012 0.006 0.018"        position="18 11.8 -23"              rotation="0 0 0"  ></a-entity>
+<a-entity gltf-model="#benz"         scale="0.015 0.015 0.015"              position="8.3 12.28 -40"      rotation="0 180 0"></a-entity>
+<a-entity gltf-model="#bota"         scale="0.009 0.009 0.009"              position="13 11.8 -34"      rotation="0 90 0"></a-entity>
+<a-entity gltf-model="#bota"         scale="0.009 0.009 0.009"              position="14.5 11.8 -34"      rotation="0 90 0"></a-entity>
+<a-entity gltf-model="#dozaj"         scale="3 3 3"              position="13.80 11.9 -39"      rotation="0 0 0"></a-entity>
+<a-entity gltf-model="#maga"         scale="0.05 0.05 0.05"              position="18 12.2 -39"      rotation="0 -90 0"></a-entity>
+<a-entity gltf-model="#maga"         scale="0.05 0.05 0.05"              position="18 12.2 -35"      rotation="0 -90 0"></a-entity>
+<a-entity gltf-model="#maga"         scale="0.05 0.05 0.05"              position="18 12.2 -32"      rotation="0 -90 0"></a-entity>
+<a-entity gltf-model="#pipit"        scale="0.05 0.05 0.05"                       position="13.0 11.75 -38.5"   rotation="8 0 0"></a-entity>
+<a-entity gltf-model="#pipit"        scale="0.05 0.05 0.05"                       position="12.5 11.75 -38.5"   rotation="8 0 0"></a-entity>
+<a-entity gltf-model="#pipit"        scale="0.05 0.05 0.05"                       position="12.75 11.75 -38.5"  rotation="8 0 0"></a-entity>
+<a-entity gltf-model="#pipit"        scale="0.05 0.05 0.05"                       position="14.4 11.75 -38.5"   rotation="8 0 0"></a-entity>
+<a-entity gltf-model="#pipit"        scale="0.05 0.05 0.05"                       position="14.7 11.75 -38.5"   rotation="8 0 0"></a-entity>
+<a-entity gltf-model="#pipit"        scale="0.05 0.05 0.05"                       position="14.95 11.75 -38.5"  rotation="8 0 0"></a-entity>
+<a-entity gltf-model="#mail"         scale="2.2 2.2 2.2"                    position="8.7 11.869 -34"      rotation="0 180 0"></a-entity>
+<a-entity gltf-model="#balance"         scale="0.05 0.05 0.05"              position="8.7 12.2 -43.7"       rotation="0 0 0"></a-entity>
+<a-entity gltf-model="#balance"         scale="0.05 0.05 0.05"              position="10.2 12.2 -43.7"      rotation="0 0 0"></a-entity>
+<a-entity gltf-model="#balance"         scale="0.05 0.05 0.05"              position="11.7 12.2 -43.7"      rotation="0 0 0"></a-entity>
+<a-entity gltf-model="#balance"         scale="0.05 0.05 0.05"              position="13.2 12.2 -43.7"      rotation="0 0 0"></a-entity>
+<a-entity gltf-model="#circuit"         scale="0.15 0.15 0.15"              position="-13.2 11.85 -27.7"    rotation="0 45 0"></a-entity>
+<a-entity gltf-model="#circuit"         scale="0.15 0.15 0.15"              position="-12.2 11.85 -27.7"    rotation="0 75 0"></a-entity>
+<a-entity gltf-model="#circuit"         scale="0.15 0.15 0.15"              position="-11.2 11.85 -27.7"    rotation="0 65 0"></a-entity>
+<!--Experience circuit 1-->
+<a-entity gltf-model="#bola"          scale="0.01 0.01 0.01"           position="-13.895 11.84 -32.07"    rotation="0 0 0"></a-entity>
+<a-cylinder  position="-11.55 11.9 -34,0"   scale="0.02 1.5 0.02"     color="green"               rotation="0 90 0">
+<a-animation attribute="rotation"           from="0 90 0"  to="90 90 0"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="green"              to="blue"                   begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-12.55 11.9 -34,0"   scale="0.02 1.3 0.02" color="purple"          rotation="45 45 45">
+<a-animation attribute="rotation"           from="45 45 0"          to="90 90 0"           begin="click" ></a-animation>
+<a-animation attribute="color"              from="purple"           to="red"               begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-13.55 11.9 -34,0"   scale="0.02 1.78 0.02" color="black"          rotation="90 90 0">
+<a-animation attribute="scale"              from="0.02 1.78 0.02"  to="0.02 0.78 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="black"           to="red"               begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-12.2 11.9 -33,0"    scale="0.02 0.79 0.02" color="black"          rotation="90 0 0">
+<a-animation attribute="position"           from="-12.2 11.9 -33,0"           to="-12.2 10.9 -33,0"               begin="click" >
+</a-animation>
+</a-cylinder>
+<a-cylinder  position="-11.8 11.9 -33,0"    scale="0.02 0.79 0.02" color="black"          rotation="90 0 0">
+<a-animation attribute="position"           from="-11.8 11.9 -33,0"           to="-12.2 10.9 -33,0"               begin="click" >
+</a-cylinder>
+<a-cylinder  position="-13.94 11.9 -33,8"    scale="0.02 1.09 0.02" color="blue"          rotation="90 0 0">
+<a-animation attribute="scale"              from="0.02 1.09 0.02"  to="0.02 1.96 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="blue"           to="red"               begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-10.82 11.9 -33,8"    scale="0.02 1.96 0.02" color="purple"          rotation="90 90 0">
+<a-animation attribute="rotation"           from="90 90 0"          to="90 0 0"           begin="click" ></a-animation>
+<a-animation attribute="scale"              from="0.02 1.09 0.02"  to="0.02 1.96 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="white"           to="blue"               begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-12.7 11.9 -32,00"    scale="0.02 0.89 0.02" color="green"          rotation="0 45 90">
+<a-animation attribute="position"              from="-12.7 11.9 -32,00"           to="-12.7 10.9 -32,00"               begin="click" >
+</a-animation>
+</a-cylinder>
+<a-cylinder  position="-12.09 11.9 -32,00"    scale="0.02 0.89 0.02" color="green"          rotation="0 -45 90">
+<a-animation attribute="position"              from="-12.09 11.9 -32,00"           to="-12.09 10.9 -32,00"               begin="click" >
+</a-cylinder>
+<a-cylinder  position="-13.0 11.9 -32,50"    scale="0.02 1.5 0.02" color="brown"          rotation="90 0 0">
+<a-animation attribute="rotation"           from="90 0 0"          to="90 90 0"           begin="click" ></a-animation>
+<a-animation attribute="scale"              from="0.02 0.09 0.02"  to="0.02 1.6 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="brown"           to="blue"               begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-11.8 11.9 -32,0"    scale="0.02 0.12 0.02" color="yellow"          rotation="90 0 0">
+<a-animation attribute="rotation"           from="90 0 0"          to="90 90 0"           begin="click" ></a-animation>
+<a-animation attribute="scale"              from="0.02 0.09 0.02"  to="0.02 1.98 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="green"           to="blue"               begin="click" ></a-animation>
+</a-cylinder>
+<a-entity gltf-model="#ampire"        scale="4 4 4"                    position="-13.1 12.1 -32.2"       rotation="-62 -60 60"></a-entity>
+<a-entity gltf-model="#sircuit"       scale="3.35 3.35 3.35"           position="-12 12.2 -33.7"      rotation="0 0 0"></a-entity>
+<a-box       position="-13.89 11.84 -32,15"   scale="0.2 0.2 0.2" color="yellow" rotation="90 90 0">
+<a-animation attribute="color"                from="white"        to="red"       begin="click" repeat="indifinite"></a-animation>
+</a-box>
+<a-sphere    position="-13.88 12.10 -32,99"   scale="0.09 0.09 0.09" color="red" rotation="90 90 0">
+<a-animation attribute="color"                from="red"             to="white"    begin="click" repeat="indifinite"></a-animation>
+</a-sphere>
+<a-text font="kelsonsans" value="MANIPULATION 1" width="5" position="-13.88 11.10 -32,99" rotation="0 0 0" color="red">
+</a-text>
+<a-text font="kelsonsans" value="Reconstruisez le circuit, pour obtenir à la fin un circuit composé « en serie ». " width="3" position="-13.88 11.10 -31,0" rotation="-90 0 0" color="grey">
+</a-text>
+<a-entity gltf-model="#centrifuge"   scale="3 4 3"                    position="-9.0 11.8 -33,5"          rotation="0 0 0"></a-entity>
+
+<a-entity gltf-model="#centrifuge"   scale="3 4 2.5"                  position="-14.5 11.8 -40.5"         rotation="0 0 0"></a-entity>
+<!--
+<a-entity gltf-model="#centrifuge"   scale="3 4 3"                    position="-12.2 11.85 -28.4"        rotation="0 0 0"></a-entity>
+-->
+<!--Experience circuit 2-->
+<a-text font="kelsonsans" value="MANIPULATION 2" width="5" position="-13.88 11.10 -38,49" rotation="0 -0 0" color="red">
+</a-text>
+<a-text font="kelsonsans" value="Reconstruisez le circuit, pour obtenir à la fin un circuit composé « en parallèle »." width="3" position="-13.88 11.10 -37,49" rotation="-90 -0 0" color="grey">
+</a-text>
+<a-entity gltf-model="#bola"          scale="0.01 0.01 0.01"           position="-11.85 11.97 -39,15"    rotation="0 0 0"></a-entity>
+<a-entity gltf-model="#sircuit"       scale="3.35 3.35 3.35"           position="-12.0 12.2 -39.70"      rotation="0 0 0"></a-entity>
+<a-entity gltf-model="#ampire"        scale="6 6 6"                    position="-11.9 12.3 -38.4"       rotation="-62 -60 60"></a-entity>
+<a-entity gltf-model="#oscillograph"  scale="0.035 0.035 0.030"        position="-10.9 11.76 -40.4"      rotation="0 0 0"></a-entity>
+<a-box       position="-11.85 11.95 -39,15"   scale="0.2 0.2 0.2" color="yellow" rotation="90 90 0">
+<a-animation attribute="color"                from="white"        to="red"       begin="click" repeat="indifinite"></a-animation>
+</a-box>
+<a-sphere    position="-11.85 12.215 -39,0"   scale="0.09 0.09 0.09" color="white" rotation="90 90 0">
+<a-animation attribute="color"                from="red"             to="white"    begin="click" repeat="indifinite"></a-animation>
+</a-sphere>
+<a-cylinder  position="-12.7 12.00 -38,0"   scale="0.02 0.09 0.02" color="green"          rotation="90 0 0">
+<a-animation attribute="rotation"           from="90 0 0"          to="90 90 0"           begin="click" ></a-animation>
+<a-animation attribute="scale"              from="0.02 0.09 0.02"  to="0.02 1.5 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="green"           to="red"               begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-12.7 12.00 -40,0"   scale="0.02 0.09 0.02" color="green"          rotation="90 0 0">
+<a-animation attribute="rotation"           from="90 0 0"          to="90 90 0"           begin="click" ></a-animation>
+<a-animation attribute="scale"              from="0.02 0.09 0.02"  to="0.02 1.5 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="green"           to="red"               begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-12.7 12.00 -39,0"   scale="0.02 0.09 0.02 " color="green"          rotation="90 0 0">
+<a-animation attribute="rotation"           from="90 0 0"           to="90 90 0"           begin="click" ></a-animation>
+<a-animation attribute="scale"              from="0.02 0.09 0.02"   to="0.02 1.5 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="green"            to="red"               begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-13.44 12.00 -39,0"  scale="0.02 0.09 0.02" color="green"           rotation="90 0 0">
+<a-animation attribute="scale"              from="0.02 0.09 0.02"  to="0.02 1.99 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="green"           to="red"                begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-11.0 12.00 -40,0"   scale="0.02 0.7 0.02" color="green"          rotation="90 0 0">
+<a-animation attribute="rotation"           from="90 0 0"         to="90 90 0"           begin="click" ></a-animation>
+<a-animation attribute="scale"              from="0.02 0.7 0.02"  to="0.02 1.5 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="green"          to="blue"              begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-11.0 12.00 -39,0"   scale="0.02 0.09 0.02"   color="green"          rotation="90 00 0">
+<a-animation attribute="rotation"           from="90 0 0"            to="90 90 0"           begin="click" ></a-animation>
+<a-animation attribute="scale"              from="0.02 0.09 0.02"    to="0.02 1.5 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="green"             to="blue"              begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-11.0 12.00 -38"     scale="0.02 0.09 0.02" color="green"          rotation="90 0 0">
+<a-animation attribute="rotation"           from="90 0 0"          to="90 90 0"           begin="click" ></a-animation>
+<a-animation attribute="scale"              from="0.02 0.09 0.02"  to="0.02 1.5 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="green"           to="blue"              begin="click" ></a-animation>
+</a-cylinder>
+<a-cylinder  position="-10.25 12.00 -39,0"       scale="0.02 0.09 0.02"     color="green"           rotation="90 0 0">
+<a-animation attribute="scale"              from="0.02 0.09 0.02"      to="0.02 1.99 0.02"     begin="click" ></a-animation>
+<a-animation attribute="color"              from="green"  to="blue"     begin="click" ></a-animation>
+</a-cylinder>
+<a-entity gltf-model="#H2O"           scale="0.01 0.01 0.01"              position="17.6 12.0 -22.37"      rotation="0 90 0"></a-entity>
+<a-entity gltf-model="#atome4"        scale="0.08 0.08 0.08"              position="17.75 12.007 -24.3"    rotation="0 20 0"></a-entity>
+<a-entity gltf-model="#atome5"        scale="0.1 0.1 0.1"                 position="18.5 12.8 -27.3"       rotation="0 90 0"></a-entity>
+<a-entity gltf-model="#tv"            scale="0.005 0.005 0.006"           position="0 11.8 -25.5"          rotation="0 90 0"></a-entity>
+<a-entity gltf-model="#tv"            scale="0.005 0.005 0.006"           position="0 11.8 -31"            rotation="0 90 0"></a-entity>
+<!--manipualtion 2-->
+<a-text font="kelsonsans" value="H2O    +   HCL   =  Cl-   +    H3O+ " width="3" position="11.815 13.50 -28" rotation="0 0 0" color="black">
+</a-text>
+<!--text-->
+<a-text font="kelsonsans" value="MANIPULATION 2"           width="5" position="11.25 11.39ss -27.5"      rotation="0 0 0" color="black"></a-text>
+<!--text-->
+<a-text font="kelsonsans" value="Dans l'equation de la reaction suivante:"           width="4" position="10.05 10.0 -27"      rotation="-90 0 0" color="grey"></a-text>
+<a-text font="kelsonsans" value="Complétez les réactifs et corrigez les produits de la réaction "           width="4" position="10.05 10.0 -26.7"      rotation="-90 0 0" color="grey"></a-text>
+<!--chlorure hydrogene-->
+<a-sphere  position ="12.35 13.2 -27.9"  scale="0.10 0.10 0.10"  color="#000000" >
+<a-animation attribute="color" from="#000000" to="white"  begin="click"></a-animation>
+</a-sphere>
+<a-sphere  position ="12.55 13.2 -27.9"  scale="0.10 0.10 0.10"  color="#000000" >
+<a-animation attribute="color" from="#000000" to="green"  begin="click"></a-animation>
+</a-sphere>
+<!--resultat-->
+<a-sphere  position ="12.95 13.2 -27.9"  scale="0.10 0.10 0.10"  color="blue" >
+	<a-animation attribute="color" from="blue" to="green"  begin="click"></a-animation>
+</a-sphere>
+<a-sphere  position ="13.32 13.2 -27.9"  scale="0.10 0.10 0.10"  color="#000000" >
+	<a-animation attribute="color" from="#000000" to="red"  begin="click"></a-animation>
+</a-sphere>
+<a-sphere  position ="13.58 13.2 -27.9"  scale="0.10 0.10 0.10"  color="#000000" >
+	<a-animation attribute="color" from="#000000" to="white"  begin="click"></a-animation>
+</a-sphere>
+<a-sphere  position ="13.45 13.33 -27.9"  scale="0.10 0.10 0.10"  color="brown" >
+	<a-animation attribute="color" from="#000000" to="white"  begin="click"></a-animation>
+</a-sphere>
+<a-sphere  position ="13.45 13.08 -27.9"  scale="0.10 0.10 0.10"  color="purple" >
+	<a-animation attribute="color" from="#000000" to="white"  begin="click"></a-animation>
+</a-sphere>
+<!--boit1-->
+<!--sphere blue-->
+<a-sphere  position ="13.5 12 -27.5"  scale="0.10 0.10 0.10"  color="white" >
+<a-animation  attribute="position" begin="click" to="12 13.2 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="13.5 12 -27.7"  scale="0.10 0.10 0.10"  color="white" >
+<a-animation  attribute="position" begin="click" to="12 13.2 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="13.7 12 -27.5"  scale="0.10 0.10 0.10"  color="white" >
+<a-animation  attribute="position" begin="click" to="12 13.2 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="13.7 12 -27.7"  scale="0.10 0.10 0.10"  color="white" >
+<a-animation  attribute="position" begin="click" to="12 13.2 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="13.3 12 -27.5"  scale="0.10 0.10 0.10"  color="white" >
+<a-animation  attribute="position" begin="click" to="12 13.2 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="13.3 12 -27.7"  scale="0.10 0.10 0.10"  color="white" >
+<a-animation  attribute="position" begin="click" to="12 13.2 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--boit2-->
+<!--sphere rouge-->
+<a-sphere  position ="10.85 12 -27.5"  scale="0.10 0.10 0.10" color="white" >
+<a-animation  attribute="position" begin="click" to="11.8 13.2 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="10.85 12 -27.7"  scale="0.10 0.10 0.10" color="white" >
+<a-animation  attribute="position" begin="click" to="11.8 13.2 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="10.6 12 -27.5"  scale="0.10 0.10 0.10" color="white" >
+<a-animation  attribute="position" begin="click" to="11.8 13.2 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="10.6 12 -27.7"  scale="0.10 0.10 0.10" color="white" >
+<a-animation  attribute="position" begin="click" to="11.8 13.2 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="11.10 12 -27.5"  scale="0.10 0.10 0.10" color="white" >
+<a-animation  attribute="position" begin="click" to="11.8 13.2 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="11.10 12 -27.7"  scale="0.10 0.10 0.10" color="white" >
+<a-animation  attribute="position" begin="click" to="11.8 13.2 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--boit3-->
+<!--sphere jaune-->
+<a-sphere  position ="10.8 12 -29"  scale="0.10 0.10 0.10" color="red" >
+<a-animation  attribute="position" begin="click" to="11.87 13.35 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="10.8 12 -29.2"  scale="0.10 0.10 0.10" color="red" >
+<a-animation  attribute="position" begin="click" to="11.87 13.35 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="11.0 12 -29"  scale="0.10 0.10 0.10" color="red" >
+<a-animation  attribute="position" begin="click" to="11.87 13.35 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="11.0 12 -29.2"  scale="0.10 0.10 0.10" color="red" >
+<a-animation  attribute="position" begin="click" to="11.87 13.35 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="10.6 12 -29"  scale="0.10 0.10 0.10" color="red" >
+<a-animation  attribute="position" begin="click" to="11.87 13.35 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="10.6 12 -29.2"  scale="0.10 0.10 0.10" color="red" >
+<a-animation  attribute="position" begin="click" to="11.87 13.35 -27.9" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--boit4-->
+<!--sphere brown-->
+<a-sphere  position ="13.5 12 -29"  scale="0.10 0.10 0.10" color="brown" >
+<a-animation  attribute="position" begin="click" to="1.5 -15 -7" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="13.5 12 -29.2"  scale="0.10 0.10 0.10" color="brown" >
+<a-animation  attribute="position" begin="click" to="1.5 -15 -7" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="13.7 12 -29"  scale="0.10 0.10 0.10" color="brown" >
+<a-animation  attribute="position" begin="click" to="1.5 -15 -7" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="13.7 12 -29.2"  scale="0.10 0.10 0.10" color="brown" >
+<a-animation  attribute="position" begin="click" to="1.5 -15 -7" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="13.3 12 -29"  scale="0.10 0.10 0.10" color="brown" >
+<a-animation  attribute="position" begin="click" to="1.5 -15 -7" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<a-sphere  position ="13.3 12 -29.2"  scale="0.10 0.10 0.10" color="brown" >
+<a-animation  attribute="position" begin="click" to="1.5 -15 -7" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--porte-->
+<a-box widt="10" height="3.2" depth="0.02" position ="-0.09 13.2 -14.9" rotation= "0 0 0" scale="2.5 2 2"  color="brown" >
+<a-animation  attribute="position" begin="click" to="-2.65 13.2 -15.4"></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-box>
+<!--sabbora-->
+<a-box widt="10" height="3.2" depth="0.02" position ="18.1 12.1 -18.3" rotation= "0 90 0" scale="6.3 3.19 2"  color="black" >
+<a-animation  attribute="position" begin="click" to="18.1 26 -18.3"></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-box>
+<!--Manipulation 1-->
+<a-text font="kelsonsans" value="MANIPULATION 1" width="5" position="18.3 11.00 -25.5" rotation="0 -90 0" color="red"></a-text>
+<a-text font="kelsonsans" value="
+Reconstruisez les molécules que vous voyez devant vous.
+Dans les boîtes vous trouverez les atomes et les liaisons.
+" width="3.5" position="16 10 -25.9" rotation="-90 -90 0" color="grey"></a-text>
+<!--ghlaka-->
+<a-box width="0.125" height="0.3" depth="0.001" position ="18.022 12.0 -23.28" rotation= "90 90 90" scale="6.3 3.19 2"  color="#000000" >
+<a-animation  attribute="position" begin="click"       to="17.260 12.0 -23.28"></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-box>
+<a-text font="kelsonsans" value="H2O" width="3" position="17.67 12.40 -22.5" rotation="0 -90 0" color="#00FFF0"></a-text>
+<!--cylindre1-->
+<a-cylinder position="18.3 11.94 -23" radius="0.5" scale="0.05 0.12 0.05" color="white" rotation="-39 0 0">
+<a-animation  attribute="position" begin="click" to="18.0 12.6 -23.34" >
+</a-animation>
+</a-cylinder>
+<!--cylindre2-->
+<a-cylinder position="18.3 11.94 -23.596" radius="0.5" scale="0.05 0.12 0.05" color="white" rotation="39 0 0">
+<a-animation  attribute="position" begin="click" to="18.0 12.6 -23.45" >
+</a-animation>
+</a-cylinder>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -23.596"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -23.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -23.438"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -23.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -23.28"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -23.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -23.122"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -23.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -22.964"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -23.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -23.596"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -23.5" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -23.438"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -23.5" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -23.28"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -23.5" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -23.122"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -23.5" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -22.964"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -23.5" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere blue-->
+<a-sphere  position ="17.876 11.9 -23.596"  scale="0.08 0.08 0.08" color="blue" >
+<a-animation  attribute="position" begin="click" to="18.022 12.65 -23.4" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere blue-->
+<a-sphere  position ="17.876 11.9 -23.438"  scale="0.08 0.08 0.08" color="blue" >
+<a-animation  attribute="position" begin="click" to="18.022 12.65 -23.4" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere blue-->
+<a-sphere  position ="17.876 11.9 -23.28"  scale="0.08 0.08 0.08" color="blue" >
+<a-animation  attribute="position" begin="click" to="18.022 12.65 -23.4" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere blue-->
+<a-sphere  position ="17.876 11.9 -23.122"  scale="0.08 0.08 0.08" color="blue" >
+<a-animation  attribute="position" begin="click" to="18.022 12.65 -23.4" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere blue-->
+<a-sphere  position ="17.876 11.9 -22.964"  scale="0.08 0.08 0.08" color="blue" >
+<a-animation  attribute="position" begin="click" to="18.022 12.65 -23.4" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere blue-->
+<a-sphere  position ="17.706 11.9 -23.596"  scale="0.08 0.08 0.08" color="blue" >
+<a-animation  attribute="position" begin="click" to="18.022 12.65 -23.4" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere blue-->
+<a-sphere  position ="17.706 11.9 -23.438"  scale="0.08 0.08 0.08" color="blue" >
+<a-animation  attribute="position" begin="click" to="18.022 12.65 -23.4" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere blue-->
+<a-sphere  position ="17.706 11.9 -23.28"  scale="0.08 0.08 0.08" color="blue" >
+<a-animation  attribute="position" begin="click" to="18.022 12.65 -23.4" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere blue-->
+<a-sphere  position ="17.706 11.9 -23.122"  scale="0.08 0.08 0.08" color="blue" >
+<a-animation  attribute="position" begin="click" to="18.022 12.65 -23.4" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere blue-->
+<a-sphere  position ="17.706 11.9 -22.964"  scale="0.08 0.08 0.08" color="blue" >
+<a-animation  attribute="position" begin="click" to="18.022 12.65 -23.4" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--ghlaka-->
+<a-box width="0.125" height="0.3" depth="0.001" position ="18.022 12.0 -25.28" rotation= "90 90 90" scale="6.3 3.19 2"  color="#000000" >
+<a-animation  attribute="position" begin="click"       to="17.260 12.0 -25.28"></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-box>
+<!--cylindre-->
+<a-cylinder position="18.3 11.90 -25.3" radius="0.5" scale="0.05 0.20 0.05" color="white" rotation="0 0 0">
+<a-animation  attribute="position" begin="click" to="18.09 12.75 -25.28" >
+</a-animation>
+</a-cylinder>
+<a-text font="kelsonsans" value="O2" width="3" position="17.67 12.35 -24.40" rotation="0 -90 0" color="#00FFF0"></a-text>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -25.596"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.6 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -25.438"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.6 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -25.28"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.6 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -25.122"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.6 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -24.964"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.6 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -25.596"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.8 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -25.438"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.8 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -25.28"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.8 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -25.122"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.8 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -24.964"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.8 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.864 11.9 -25.596"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.6 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.864 11.9 -25.438"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.6 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.864 11.9 -25.28"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.6 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.864 11.9 -25.122"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.6 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.864 11.9 -24.964"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.6 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.706 11.9 -25.596"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.8 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.706 11.9 -25.438"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.8 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.706 11.9 -25.28"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.8 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.706 11.9 -25.122"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.8 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.706 11.9 -24.964"  scale="0.08 0.08 0.08" color="red" >
+<a-animation  attribute="position" begin="click" to="18.09 12.8 -25.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--ghlaka-->
+<a-box width="0.125" height="0.3" depth="0.001" position ="18.022 12.0 -27.28" rotation= "90 90 90" scale="6.3 3.19 2"  color="#000000" >
+<a-animation  attribute="position" begin="click"       to="17.260 12.0 -27.28"></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-box>
+<!--Molecule-->
+<a-sphere  position ="17.70 12.05 -26.35"  scale="0.08 0.08 0.08" color="#82FF21" >
+</a-sphere>
+<a-sphere  position ="17.70 12.05 -26.15"  scale="0.069 0.069 0.069" color="grey" >
+</a-sphere>
+<a-text font="kelsonsans" value="Hcl" width="3" position="17.67 12.34 -26.39" rotation="0 -90 0" color="#00FFF0"></a-text>
+<!--cylindre-->
+<a-cylinder position="18.18 11.97 -27.596" radius="0.5" scale="0.05 0.20 0.05" color="white" rotation="90 0 0">
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.35" >
+</a-animation>
+</a-cylinder>
+<!--cylindre-->
+<a-cylinder position="17.70 12.05 -26.2" radius="0.5" scale="0.05 0.20 0.05" color="white" rotation="90 0 0">
+<a-animation  attribute="position" begin="click" to="17.70 12.05 -26.2" >
+</a-animation>
+</a-cylinder>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -27.596"  scale="0.08 0.08 0.08" color="#82FF21" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.48" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -27.438"  scale="0.08 0.08 0.08" color="#82FF21" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.48" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -27.28"  scale="0.08 0.08 0.08" color="#82FF21" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.48" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -27.122"  scale="0.08 0.08 0.08" color="#82FF21" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.48" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.18 11.9 -26.964"  scale="0.08 0.08 0.08" color="#82FF21" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.48" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -27.596"  scale="0.08 0.08 0.08" color="grey" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -27.438"  scale="0.08 0.08 0.08" color="grey" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -27.28"  scale="0.08 0.08 0.08" color="grey" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -27.122"  scale="0.08 0.08 0.08" color="grey" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="18.022 11.9 -26.964"  scale="0.08 0.08 0.08" color="grey" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.866 11.9 -27.596"  scale="0.08 0.08 0.08" color="#82FF21" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.48" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.866 11.9 -27.438"  scale="0.08 0.08 0.08" color="#82FF21" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.48" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.866 11.9 -27.28"  scale="0.08 0.08 0.08" color="#82FF21" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.48" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.866 11.9 -27.122"  scale="0.08 0.08 0.08" color="#82FF21" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.48" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere rouge1-->
+<a-sphere  position ="17.866 11.9 -26.964"  scale="0.08 0.08 0.08" color="#82FF21" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.48" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event>
+</a-sphere>
+<!--sphere grey-->
+<a-sphere  position ="17.706 11.9 -27.596"  scale="0.08 0.08 0.08" color="grey" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event></a-sphere>
+<!--sphere grey-->
+<a-sphere  position ="17.706 11.9 -27.438"  scale="0.08 0.08 0.08" color="grey" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event></a-sphere>
+<!--sphere grey-->
+<a-sphere  position ="17.706 11.9 -27.28"  scale="0.08 0.08 0.08" color="grey" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event></a-sphere>
+<!--sphere grey-->
+<a-sphere  position ="17.706 11.9 -27.122"  scale="0.08 0.08 0.08" color="grey" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event></a-sphere>
+<!--sphere grey-->
+<a-sphere  position ="17.706 11.9 -26.964"  scale="0.08 0.08 0.08" color="grey" >
+<a-animation  attribute="position" begin="click" to="18.022 12.5 -27.28" ></a-animation>
+<a-event name="mouseenter" scale="9 5 8"></a-event></a-sphere>
+<!--Manipulation3-->
+<a-text font="kelsonsans" value="MANIPULATION 3" width="5" position="7.40 11.00 -31.5" rotation="0 0 0" color="green"></a-text>
+<a-text font="kelsonsans" value="
+Reconstruisez la maille cubique en respectant les vecteurs de base. 
+Les sphères doivent être tangentes aux arêtes de la maille.
+" width="3" position="7.40 11.00 -30.5"      rotation="-90 0 0" color="grey"></a-text>
+<a-sphere  position="9.79 11.86 -31.5" scale="0.09 0.09 0.09"color="blue" >
+	<a-animation  attribute="position" begin="click" to="8.7 11.86 -31.7" ></a-animation>
+</a-sphere>
+<a-sphere  position="9.79 11.86 -31.7" scale="0.09 0.09 0.09"color="blue" >
+	<a-animation  attribute="position" begin="click" to="8.7 11.86 -32.3" ></a-animation>
+</a-sphere>
+<a-sphere  position="9.60 11.86 -31.5" scale="0.09 0.09 0.09"color="blue" >
+	<a-animation  attribute="position" begin="click" to="7.8 11.86 -31.7" ></a-animation>
+</a-sphere>
+<a-sphere  position="9.60 11.86 -31.7" scale="0.09 0.09 0.09"color="blue" >
+	<a-animation  attribute="position" begin="click" to="7.8 11.86 -32.3" ></a-animation>
+</a-sphere>
+<a-sphere  position="6.79 11.86 -31.5" scale="0.09 0.09 0.09"color="blue" >
+	<a-animation  attribute="position" begin="click" to="8.7 12.76 -31.7" ></a-animation>
+</a-sphere>
+<a-sphere  position="6.79 11.86 -31.7" scale="0.09 0.09 0.09"color="blue" >
+	<a-animation  attribute="position" begin="click" to="8.7 12.76 -32.3" ></a-animation>
+</a-sphere>
+<a-sphere  position="6.60 11.86 -31.5" scale="0.09 0.09 0.09"color="blue" >
+	<a-animation  attribute="position" begin="click" to="7.8 12.76 -31.7" ></a-animation>
+</a-sphere>
+<a-sphere  position="6.60 11.86 -31.7" scale="0.09 0.09 0.09"color="blue" >
+	<a-animation  attribute="position" begin="click" to="7.8 12.76 -32.3" ></a-animation>
+</a-sphere>
+<!--baguettes-->
+<a-box  position="8.260 11.795 -31.7"   scale="0.009 0.8 0.009"color="black" rotation="90 90 0">
+	<a-animation  attribute="position" begin="click" to="8.260 11.87 -31.7" ></a-animation>
+</a-box>
+<a-box  position="8.260 11.795 -31.728" scale="0.009 0.8 0.009"color="black" rotation="90 90 0">
+	<a-animation  attribute="position" begin="click" to="8.260 11.87 -32.3" ></a-animation>
+</a-box>
+<a-box  position="8.260 11.795 -31.868"   scale="0.009 0.8 0.009"color="black" rotation="90 90 0">
+	<a-animation  attribute="position" begin="click" to="8.260 12.79 -31.7" ></a-animation>
+</a-box>
+<a-box  position="8.260 11.795 -31.896" scale="0.009 0.8 0.009"color="black" rotation="90 90 0">
+	<a-animation  attribute="position" begin="click" to="8.260 12.79 -32.3" ></a-animation>
+</a-box>
+<a-box  position="8.260 11.795 -31.756" scale="0.009 0.8 0.009"color="black" rotation="90 90 0">
+	<a-animation  attribute="position" begin="click" to="8.700 12.30 -31.7" ></a-animation>
+	<a-animation  attribute="rotation" begin="click" to="00 -45 0" ></a-animation>
+</a-box>
+<a-box  position="8.260 11.795 -31.784" scale="0.009 0.8 0.009"color="black" rotation="90 90 0">
+	<a-animation  attribute="position" begin="click" to="8.700 12.30 -32.3" ></a-animation>
+	<a-animation  attribute="rotation" begin="click" to="00 -45 0" ></a-animation>
+</a-box>
+<a-box  position="8.260 11.795 -31.812" scale="0.009 0.8 0.009"color="black" rotation="90 90 0">
+	<a-animation  attribute="position" begin="click" to="7.800 12.30 -31.7" ></a-animation>
+	<a-animation  attribute="rotation" begin="click" to="00 -45 0" ></a-animation>
+</a-box>
+<a-box  position="8.260 11.795 -31.840" scale="0.009 0.8 0.009"color="black" rotation="90 90 0">
+	<a-animation  attribute="position" begin="click" to="7.800 12.30 -32.3" ></a-animation>
+	<a-animation  attribute="rotation" begin="click" to="00 -45 0" ></a-animation>
+</a-box>
+<a-box  position="8.260 11.795 -32.008" scale="0.009 0.75 0.009"color="black" rotation="90 90 0">
+	<a-animation  attribute="position" begin="click" to="7.800 12.79 -32.0" ></a-animation>
+	<a-animation  attribute="rotation" begin="click" to="90 0 0" ></a-animation>
+</a-box>
+<a-box  position="8.260 11.795 -31.980" scale="0.009 0.75 0.009"color="black" rotation="90 90 0">
+	<a-animation  attribute="position" begin="click" to="7.800 11.86 -32.0" ></a-animation>
+	<a-animation  attribute="rotation" begin="click" to="90 0 0" ></a-animation>
+</a-box>
+<a-box  position="8.260 11.795 -31.924" scale="0.009 0.75 0.009"color="black" rotation="90 90 0">
+	<a-animation  attribute="position" begin="click" to="8.700 12.79 -32.0" ></a-animation>
+	<a-animation  attribute="rotation" begin="click" to="90 0 0" ></a-animation>
+</a-box>
+<a-box  position="8.260 11.795 -31.952" scale="0.009 0.75 0.009"color="black" rotation="90 90 0">
+	<a-animation  attribute="position" begin="click" to="8.700 11.86 -32.0" ></a-animation>
+	<a-animation  attribute="rotation" begin="click" to="90 0 0" ></a-animation>
+</a-box>
+<a-text font="kelsonsans" value="Oxygène (O) : rouge"       width="6" position="18.1 16.1 -20.3"     rotation="0 -90 0"color="red"></a-text>
+<a-text font="kelsonsans" value="Carbone (C) : noir."     width="6" position="18.1 15.7 -20.3"     rotation="0 -90 0"color="black"></a-text>
+<a-text font="kelsonsans" value="Hydrogène (H) : blanc"   width="6" position="18.1 15.3 -20.3"     rotation="0 -90 0"color="white"></a-text>
+<a-text font="kelsonsans" value="Chlore (Cl) : vert"     width="6" position="18.1 14.9 -20.3"     rotation="0 -90 0"color="green"></a-text>
+<a-text font="kelsonsans" value="Soufre (S) : jaune"    width="6" position="18.1 14.5 -20.3"     rotation="0 -90 0"color="yellow"></a-text>
+<a-text font="kelsonsans" value="Azote (N) : bleu"       width="6" position="18.1 14.1 -20.3"     rotation="0 -90 0"color="blue"></a-text>
+<a-text font="kelsonsans" value="Phosphore (P) : violet" width="6" position="18.1 13.7 -20.3"     rotation="0 -90 0"color="purple"></a-text>
+<a-text font="kelsonsans" value="Fer (Fe) : gris"       width="6" position="18.1 13.3 -20.3"     rotation="0 -90 0"color="grey"></a-text>
+<a-text font="kelsonsans" value="Appareil de Dosage 1"   width="2" position="13.8 13.5 -34"     rotation="0 0 0"color="black"></a-text>
+<a-text font="kelsonsans" value="Appareil de Dosage 1"   width="2" position="12.5 13.5 -34"     rotation="0 0 0"color="black"></a-text>
+<a-text font="kelsonsans" value="SYNVA Scientific laboratory VR"          width="9" position="-2.5 17.20 -15.0"     rotation="0 0 0"color="red"></a-text>
+<a-text font="kelsonsans" value="Salle Visio-Conference"  width="5" position="-3.3 15.40 -21.3"     rotation="0 0 0"color="red"></a-text>
+<a-text font="kelsonsans" value="Salle Physique"          width="5" position="-6.8 15.40 -21.3"     rotation="0 0 0"color="red"></a-text>
+<a-text font="kelsonsans" value="Salle Chimie"          width="5" position="5.4 15.40 -21.3"     rotation="0 0 0"color="red"></a-text>
+<!--camera-->
+<a-entity position="0 11.20 -15" rotation="0 0 0"> 
+<a-camera>
+<a-cursor color="green"></a-cursor>
+</a-camera>
+</a-entity>
+</a-scene>
+</body>
+</html>

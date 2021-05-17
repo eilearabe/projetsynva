@@ -1,0 +1,356 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4029,
+      "max": [
+        1.0139788389205933,
+        0.69981628656387329,
+        1.0139557123184204
+      ],
+      "min": [
+        -1.0139555931091309,
+        -1.4216467142105103,
+        -1.0139557123184204
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 48348,
+      "componentType": 5126,
+      "count": 4029,
+      "max": [
+        0.99998533725738525,
+        0.9999992847442627,
+        1
+      ],
+      "min": [
+        -0.99974226951599121,
+        -0.99999606609344482,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 4029,
+      "max": [
+        1,
+        0.9997708797454834,
+        1,
+        1
+      ],
+      "min": [
+        -0.99999552965164185,
+        -0.9997062087059021,
+        -0.9999997615814209,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4029,
+      "max": [
+        0.75000447034835815,
+        1.0000003576278687
+      ],
+      "min": [
+        -0.0024460696149617434,
+        -0.0036691052373498678
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 11916,
+      "max": [
+        4028
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 96696,
+      "componentType": 5126,
+      "count": 825,
+      "max": [
+        0.97128164768218994,
+        -0.87278538942337036,
+        0.97120988368988037
+      ],
+      "min": [
+        -0.97120976448059082,
+        -1.3838553428649902,
+        -0.9712098240852356
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 106596,
+      "componentType": 5126,
+      "count": 825,
+      "max": [
+        0.99921751022338867,
+        0.99999773502349854,
+        0.98966145515441895
+      ],
+      "min": [
+        -0.96382027864456177,
+        -0.99999845027923584,
+        -0.98878931999206543
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 64464,
+      "componentType": 5126,
+      "count": 825,
+      "max": [
+        1,
+        0.99477869272232056,
+        0.99999940395355225,
+        1
+      ],
+      "min": [
+        -0.99999535083770752,
+        -0.98846977949142456,
+        -0.99999934434890747,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 32232,
+      "componentType": 5126,
+      "count": 825,
+      "max": [
+        0.75000017881393433,
+        1.0000002384185791
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 47664,
+      "componentType": 5125,
+      "count": 2880,
+      "max": [
+        824
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Nevermoredmb (https://sketchfab.com/nevermoredmb)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/3-chemistry-bottle-3december2019-370a39d98ce34971888c69d21a67a4c0",
+      "title": "#3 Chemistry bottle  3December2019"
+    },
+    "generator": "Sketchfab-7.7.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 59184,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 38832,
+      "byteOffset": 59184,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 116496,
+      "byteOffset": 98016,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 77664,
+      "byteOffset": 214512,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 292176,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": false,
+      "name": "Material.001",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          0.27000762195121952
+        ],
+        "metallicFactor": 0.67854420731707321,
+        "roughnessFactor": 0.13586128048780488
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "Material.002",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          0,
+          0,
+          0.33098323170731708
+        ],
+        "metallicFactor": 0.11756859756097561,
+        "roughnessFactor": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "root"
+    },
+    {
+      "children": [
+        4,
+        6
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.2204460492503131e-16,
+        1,
+        0,
+        0,
+        -1,
+        2.2204460492503131e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "GLTF_SceneRootNode"
+    },
+    {
+      "children": [
+        5
+      ],
+      "name": "bottle_0"
+    },
+    {
+      "mesh": 0,
+      "name": ""
+    },
+    {
+      "children": [
+        7
+      ],
+      "name": "fluid_1"
+    },
+    {
+      "mesh": 1,
+      "name": ""
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+

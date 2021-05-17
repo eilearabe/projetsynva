@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formulaire</title>
+	<style>
+
+		.champ
+		{
+		 width: 300px;
+		 display: inline-block;
+		}
+
+		fieldset
+
+		{
+			width: 700px;
+			border-radius: 5px;
+			line-height: 35px;
+			background-color: #8637FF;
+			margin: 5px;
+			
+		}
+
+		button,input
+		{ 
+		  font-family: trebuchet MS; 
+		  font-size: 15px;
+		  border-radius: 2px;
+		  margin: 5px;
+		}
+		
+		body
+		{
+			background-color: #D8FFF7;
+			font-family: Times;
+			font-size: 20px;
+		}
+
+		input[type="text"]:invalid {border :2px solid red;}
+		input[type="text"]:valid {border :2px solid green;}
+
+	</style>
+</head>
+
+
+
+
+
+<body>
+	<h1 style="text-align:center; color: blue;">Evaluations SYNVA scientific laboratory VR</h1>
+
+
+
+
+
+
+	<form action="formulaire.php" method="post">
+
+
+
+
+
+	<fieldset>
+		<legend><b style="color: brown">Evaluation des travaux pratiques</b></legend>
+
+		<span class="champ">Numero Nationale de l'élève</span>        <input type="number" name="Numero"   placeholder=" ex:123456789 " required><br>
+
+		<span class="champ">La date de Naissance </span><input type="Date" name="Date" required><br><br><br>
+	
+
+
+		<span class="champ">
+		<b style="color: red">Manipulation 1:</b><br>
+		Combien d’atomes d’hydrogène la molécule d’eau comporte-t-elle ?<br>
+        </span><input type="number" name="B1" min="1" max="100" step="1" required><br><br><br>
+
+
+
+
+
+
+
+
+		<span class="champ">
+		<b style="color: red">Manipulation 2:</b><br>
+		Combien d’atomes composent la molécule de chlorure d'hydrogène ?
+		</span><input type="number" name="B2" min="1" max="100" step="1" required><br><br><br>
+
+
+
+
+
+
+
+
+		<span class="champ">
+		<b style="color: red">Manipulation 3:</b><br>
+		Combien d’atomes comporte la maille élémentaire que vous avez construite ?
+		</span><input type="number" name="B3" min="1" max="100" step="1" required><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+		<span class="champ">
+		<b style="color: red">Manipulation 4:</b><br>
+		Quel est le nombre minimum de composants nécessaires pour constituer un circuit composé « en série » ?
+		</span><input type="number" name="B4" min="1" max="100" step="1" required><br><br><br>
+
+
+
+
+
+
+
+		<span class="champ">
+		<b style="color: red">Manipulation 5:</b><br>
+		Dans le circuit parallèle, combien de bornes du multimètre faut-il utiliser ? 
+        </span><input type="number" name="B5" min="1" max="100" step="1" required><br><br><br>
+
+
+
+
+		<span class="champ">
+		<b style="color: red">Manipulation 6:</b><br>
+
+		Quel est le nombre minimum de composants nécessaires pour constituer un circuit composé « en parallèle » ?
+	</span>     <input type="number" name="chance" min="1" max="10" step="1" required><br><br><br>
+
+
+</fieldset>
+
+
+
+    <input type="submit"    value="Envoyer">
+
+     
+
+
+	</form>
+
+</body>
+</html>

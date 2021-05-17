@@ -1,0 +1,11 @@
+Model Information:
+* title:	Electric Circuit
+* source:	https://sketchfab.com/3d-models/electric-circuit-9accb2c5dedd423f96877493767c2309
+* author:	b.boukhari5d (https://sketchfab.com/b.boukhari5d)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Electric Circuit" (https://sketchfab.com/3d-models/electric-circuit-9accb2c5dedd423f96877493767c2309) by b.boukhari5d (https://sketchfab.com/b.boukhari5d) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
